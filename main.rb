@@ -43,4 +43,4 @@ def makeNegative(num)
     return -num
 end
 end
-# Ruby also takes .abs method -num.abs = negative number
+# Ruby also takes .abs method -num.abs = negative number kdsjfgh
