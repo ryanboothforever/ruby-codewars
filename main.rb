@@ -19,4 +19,28 @@ def solution(sentence)
   return sentence.split.reverse.join(" ")
 end
 
-puts solution("welcome to hell")
+=begin
+It's pretty straightforward. Your goal is to create a function that removes the first and last characters of a string. You're given one parameter, the original string. You don't have to worry with strings with less than two characters.
+=end
+
+def remove_char(s)
+   s.chop.reverse.chop.reverse
+end
+=begin Better code
+def remove_char(s)
+  s[1...-1]
+end 
+=end
+
+=begin
+In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?
+=end
+
+def makeNegative(num)
+  if(num.to_s.start_with?("-"))
+    return num
+  else
+    return -num
+end
+end
+# Ruby also takes .abs method -num.abs = negative number
